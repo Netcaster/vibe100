@@ -1,3 +1,16 @@
 @import "tailwindcss";
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #0A0A0A; }
+body { margin: 0; background: #0A0A0A; transition: background 0.2s; }
+
+html.light body { background: #f7f3ee; }
+html.light .bg-\[\#0A0A0A\] { background-color: #f7f3ee !important; }
+html.light .text-white { color: #181410 !important; }
+html.light .text-zinc-300 { color: #4a443d !important; }
+html.light .text-zinc-400 { color: #756e64 !important; }
+html.light .border-white\/10 { border-color: rgba(0,0,0,0.1) !important; }
+html.light .bg-white\/\[0\.04\] { background-color: rgba(0,0,0,0.04) !important; }
+html.light .bg-white\/\[0\.08\]:hover { background-color: rgba(0,0,0,0.07) !important; }
+html.light .bg-black\/40 { background-color: rgba(0,0,0,0.06) !important; }
+html.light .bg-black\/80 { background-color: rgba(255,255,255,0.85) !important; }
+html.light .bg-zinc-950 { background-color: #fbf8f4 !important; }
+html.light input, html.light textarea { background-color: #ffffff !important; color: #181410 !important; }
